@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    // 指定编译为ECMAScript的哪个版本。默认为"ES3"
+    "target": "ES5",
+    // 编译为哪种模块系统。如果target为"ES3"或者"ES5"，默认为"CommonJS"，否则默认为"ES6"
+    "module": "CommonJS",
+    // 模块解析策略，"Classic" 或者 "Node"。如果module为"AMD"、"System"或者"ES6"，默认为"Classic"，否则默认为"Node"
+    "moduleResolution": "Node",
+    // 是否支持使用import cjs from 'cjs'的方式引入commonjs包
+    "esModuleInterop": true,
+    // 编译过程中需要引入的库。target为"ES5"时，默认引入["DOM","ES5","ScriptHost"]；target为"ES6"时，默认引入["DOM","ES6","DOM.Iterable","ScriptHost"]
+    "lib": ["ES6"],
+    // 类型声明文件所在目录
+    // "typeRoots": ["./node_modules/@types", "./src/types"],
+    // 编译生成的js文件所输出的根目录,默认输出到ts文件所在的目录
+    "outDir": "dist",
+    // 生成相应的.map文件
+    "sourceMap": true,
+    // 是否启用实验性的ES装饰器
+    "experimentalDecorators": true,
+    // 是否自动设置design类型元数据（关键字有"design:type"、"design:paramtypes"、"design:returntype"）
+    "emitDecoratorMetadata": true
+  },
+  "include": [
+   "src/**/*"
+  ],
+  "exclude": [
+   "node_modules",
+   "**/*.spec.ts"
+  ]
+}

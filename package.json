@@ -1,0 +1,30 @@
+{
+  "name": "node-server-decorator-demo",
+  "version": "1.0.0",
+  "description": "node服务-装饰器示例",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon --watch src -e ts,tsx --exec ts-node src/server.ts",
+    "build": "tsc",
+    "start": "tsc && node dist/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^8.0.8",
+    "mysql": "^2.18.1",
+    "reflect-metadata": "^0.1.13",
+    "source-map-support": "^0.5.16"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.11.3",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-router": "^7.4.0",
+    "@types/mysql": "^2.15.9",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.8.1",
+    "typescript": "^3.8.3"
+  }
+}
